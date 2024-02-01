@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Mastermind js</title>
 </head>
 <body>
+<main>
+    <h1>Mastermind </h1>
+    <h2>Les couleur sont a ecrire: r = rouge, g = vert, b = bleu,
+        p = violet, o = orange, y = jaune
+    </h2>
 
+        <div class="rules">
+            <p>Le but est de découvrir la combinaison de couleurs cachée par l’adversaire. Pour cela, il faut faire
+                plusieurs essais pour choisir au fur et à mesure les bonnes couleurs et trouver leur place. Mon
+                adversaire me donne des indices pour savoir si je mets les bonnes couleurs et si elles sont à la bonne
+                place</p>
+        </div>
+        <div id="gameBoard">
+            <div id="attempts">Nombre de tentative: 0</div>
+            <div id="hiddenCode">
+            </div>
+            <div class="row">
+
+            </div>
+
+        </div>
+
+        <div id="inputArea">
+            <div id="colorPalette">
+                Cliquer sur les couleurs :
+                <div class="color R"></div>
+                <div class="color G"></div>
+                <div class="color B"></div>
+                <div class="color P"></div>
+                <div class="color Y"></div>
+                <div class="color O"></div>
+            </div>
+            <input type="text" id="userInput" placeholder=" ">
+            <button id="submitGuess">Essayer</button>
+        </div>
+
+    <script src="script.js"></script>
+</main>
 </body>
 </html>
